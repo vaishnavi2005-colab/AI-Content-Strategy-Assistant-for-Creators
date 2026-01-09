@@ -1,0 +1,180 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+    height: 100vh;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CHAT CONTAINER */
+.chat-container {
+    width: 95%;
+    max-width: 1100px;
+    height: 90vh;
+    background: #ffffff;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.chat-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* HEADER ACTIONS */
+.header-actions {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.new-chat-btn {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.new-chat-btn:hover {
+    background: #f3f4f6;
+}
+
+.logout-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+/* CHAT BODY */
+.chat-body {
+    flex: 1;
+    padding: 22px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: #f9fafb;
+}
+
+/* USER MESSAGE */
+.message.user {
+    align-self: flex-end;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 75%;
+}
+
+/* BOT MESSAGE */
+.message.bot {
+    align-self: flex-start;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    color: #111827;
+    padding: 14px 18px;
+    border-radius: 12px;
+    max-width: 80%;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* BOT MARKDOWN FIXES */
+.message.bot * {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.message.bot h1,
+.message.bot h2,
+.message.bot h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 6px;
+}
+
+.message.bot p {
+    margin: 6px 0;
+}
+
+.message.bot ul,
+.message.bot ol {
+    padding-left: 18px;
+    margin: 8px 0;
+}
+
+.message.bot li {
+    margin-bottom: 6px;
+}
+
+.message.bot strong {
+    font-weight: 600;
+}
+
+/* INPUT */
+.chat-input {
+    padding: 16px;
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #e5e7eb;
+    background: #ffffff;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+.chat-input input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.chat-input button {
+    padding: 12px 22px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.chat-input button:hover {
+    background: #16a34a;
+}
